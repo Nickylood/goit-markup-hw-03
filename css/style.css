@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: #000000;
     --title-text-color: #212121;
+    --border-bottom: #ECECEC;
     --accent-color: #2196F3;
     --cover-color: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -24,11 +25,11 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background-color:var(--before-color);
+    background-color: var(--before-color);
     color: var(--title-text-color);
 }
 /* logo */
@@ -71,8 +72,12 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+.header {
+    border-bottom: 1px solid;
+    border-color: #ECECEC;
+    background-color: var(--before-color);
+}
 .header-container {
-    display: block;
     display: flex;
     align-items: center;
 }
@@ -142,20 +147,14 @@ p {
     overflow: hidden;
 }
 
-.hero {
-    background-color: var(--portfolo-main-color);
-}
 .hero-title-btn {
     text-align: center;
-    margin-bottom: 94px;
-    
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
     background: var(--h1-color);
 }
 .hero-title {
-    padding-top: 200px;
-    padding-bottom: 30px;
-
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -165,8 +164,8 @@ p {
 }
 
 .hero-btn {
-    margin-bottom: 200px;
-
+    padding: 10px 32px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -188,13 +187,22 @@ p {
 }
 .page-container {
     display: flex;
+}
+.page {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .page-first {
-    display: flex; 
+    display: flex;
+    
 }
 .page-second:not(:last-child) {
     margin-right: 30px;
+}
+.second-box {
+    flex-direction: column;
+    flex-basis: 48%;
 }
 .page-title {
     margin-bottom: 10px;
@@ -212,19 +220,15 @@ p {
     letter-spacing: 0.03em;
     color: var(--text-color);
 }
-.work-container {
-    padding-bottom: 94px;
-}
 .work-text {
-    display: flex;
-    justify-content: center;
-    padding-top: 0;
-    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .hero-img {
     display: flex;
     align-items: center;
     gap: 30px;
+    padding-bottom: 94px;
 }
 .work-about {
     display: block;
@@ -236,35 +240,28 @@ p {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
+
 .services-work {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .document {
-    display: block;
-}
-.document-first {
-    
-    display: flex;
+    text-align: center;
     padding-top: 30px;
-    padding-bottom: 10px;
-}
-.document-second {
-    display: flex;
-    justify-content: center;
     padding-bottom: 30px;
+}
+.services-text {
+    margin-top: 10px;
 }
 .doc-img {
     display: block;
 }
 .services-title {
-    display: flex;
     gap: 30px;
 }
 .services {
-    background-color: var(--services-color);
+   background-color: var(--services-color);
 }
 .services-cover {
     margin-bottom: 94px;
@@ -290,11 +287,15 @@ p {
     color: var(--text-color);
 }
 /* footer */
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 
 .logotype {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -308,11 +309,6 @@ p {
     display: block;
     margin-bottom: 9px;
 }
-.footer-tel {
-    display: flex;
-    padding-bottom: 60px;
-}
-
 .footer-map {
     font-style: normal;
     font-weight: 400;
@@ -351,14 +347,21 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
-    gap: 30px; 
+    gap: 30px;
+    padding-bottom: 94px;
+}
+.project-portfolio {
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+
 }
 .project-title {
     display: block;
 }
 .first-title {
-    display: flex;
-    padding: 20px 24px 4px;
+    margin-bottom: 4px;
 
     font-weight: 700;
     font-size: 18px;
@@ -367,9 +370,6 @@ p {
     color: var(--title-text-color);
 }
 .second-title {
-    display: flex;
-    padding: 0 24px 20px;
-
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
@@ -378,16 +378,17 @@ p {
 .button-container {
     display: block;
     display: flex;
-    justify-content: center;
 }
 .button-hero {
     display: flex;
+    justify-content: center;
     gap: 8px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 
 }
-.button {   
+.button {  
+    padding: 6px 22px;
     border-radius: 4px;
     border: var(--services-color);
 

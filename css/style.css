@@ -228,6 +228,8 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+.work {
     padding-bottom: 94px;
 }
 .work-about {
@@ -240,10 +242,11 @@ p {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
+.services {
+    padding-top: 94px;
+}
 .services-work {
     text-align: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 .document {
@@ -257,22 +260,20 @@ p {
 .doc-img {
     display: block;
 }
-.services-title {
+.services-before {
+    display: flex;
+    align-items: center;
     gap: 30px;
 }
 .services {
+   margin-bottom: 94px;
    background-color: var(--services-color);
 }
 .services-cover {
-    margin-bottom: 94px;
     background: var(--before-color);
     box-shadow: var(--cover-color);
 }
 .services-title {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19 / 16);
@@ -287,16 +288,10 @@ p {
     color: var(--text-color);
 }
 /* footer */
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
+.address {
+    margin-top: 20px;
 }
-
-
 .logotype {
-    display: flex;
-    margin-bottom: 20px;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -318,6 +313,8 @@ p {
     color: var(--before-color);
 }
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--h1-color);
 }
 .footer-link {
@@ -336,6 +333,10 @@ p {
     color: var(--accent-color);
 }
 /* portfolio main */
+.section-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .portfolio-title {
     display: block;
 }
@@ -348,7 +349,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 100%;
     gap: 30px;
-    padding-bottom: 94px;
 }
 .project-portfolio {
     padding: 20px 24px;
@@ -383,8 +383,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 .button {  
